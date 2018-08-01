@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900|Anton:100,200,300,400,500,600,700,800,900|Exo:100,200,300,400,500,600,700,800,900');
+
+header {
+    background-color: #2f3036;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    margin-right: 0;
+}
+
+.badge {
+    margin: 100px;
+    font-size: xx-large;
+    font-family: "Exo", sans-serif;
+    height: 50px;
+    text-align: center;
+    margin-top: 75px;
+    border: 2px solid white;
+    box-shadow: 0 0 20px 20px blue;
+    min-width: 140px;
+}
+
+
+
+@media (min-width: 1px) and (max-width: 767px) {
+    .badge {
+        display: block;
+        text-align: center;
+        font-size: small;
+        padding-top: 18px;
+    }
+    
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    margin-top: -25px;
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+    border: 1px solid #19c589;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover {
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Exo", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    margin-top: -25px;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 767px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: absolute;
+        display: none;
+        margin-top: -8px;
+    }
+    
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+
+/*Cover image styling*/
+.cover {
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    margin-top: 185px;
+    overflow: auto;
+    margin-bottom: 0;
+}
+
+/*Footer Styling*/
+footer {
+    position: fixed;
+    height: 51px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f6f7de;
+    z-index: 1;
+    border: 1px solid #2f3036;
+}
+
+/*Footer icons positioning and styling*/
+.fa {
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.inline {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.inline .fa-facebook-square {
+    color: #3B5998;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+
+.inline .fa-facebook-square:hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.inline .fa-twitter-square {
+    color:  #00aced;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+
+.inline .fa-twitter-square:hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.inline .fa-youtube-square {
+    color: #d02525;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 150ms;
+}
+
+.inline .fa-youtube-square:hover {
+    margin-top: -10px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    transform: translate(0, -5);
+}
+
+/*-----------------About us.html page----------------------*/
+
+/*Header styling and positioning.*/
+
+.about {
+    background-color: #b7cff4;
+    padding-bottom: 40px;
+}
+h2 {
+    padding-top: 250px;
+    width: 100%;
+    font-family: "Gothic A1", sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.members-pic {
+    margin-left: 10px;
+    width: 259px;
+    height: 194px;
+    border:3px solid #fff;
+    margin-right: 10px;
+}
+
+.names {
+    text-align: center;
+    font-family: "Gothic A1", sans-serif;
+    color: #4F4E4A;
+}
+
+.names:hover {
+    background-color: #4F4E4A;
+    color: #fff;
+}
+
+.members {
+    line-height: inherit;
+    text-indent: 20px;
+    font-family: "Exo", sans-serif;
+    min-height: 250px;
+    padding: 20px;
+    word-break: keep-all;
+}
+
+audio {
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+
+
+.believer {
+    margin-left: 130px;
+    position: absolute;
+    margin-top: -1px;
+    z-index: 1;
+   
+}
+
+
+
+
