@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900|Anton:100,200,300,400,500,600,700,800,900|Exo:100,200,300,400,500,600,700,800,900');
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 header {
     background-color: #2f3036;
     height: 200px;
     margin: 0;
     padding: 0;
     width: 100%;
-    position: absolute;
+    position: relative;
     margin-right: 0;
+    margin-top: -76px;
 }
 
 .badge {
-    margin: 100px;
+    margin: 0px 80px 100px 80px;
     font-size: xx-large;
     font-family: "Exo", sans-serif;
     height: 50px;
@@ -20,32 +35,40 @@ header {
     border: 2px solid white;
     box-shadow: 0 0 20px 20px blue;
     min-width: 140px;
+    position: relative;
+    top: 20px;
 }
 
 
 
-@media (min-width: 1px) and (max-width: 767px) {
+@media (min-width: 1px) and (max-width: 768px) {
     .badge {
         display: block;
         text-align: center;
         font-size: small;
         padding-top: 18px;
+        position: relative;
     }
     
+    
 }
+
 
 /*Strip the ul of padding and list styling*/
 ul {
     list-style-type:none;
     margin:0;
     padding:0;
-    position: absolute;
+    position: relative;
     margin-top: -25px;
+    z-index: 1;
+    
 }
 /*Create a horizontal list with spacing*/
 li {
     display:inline-block;
     margin-right: 1px;
+
 }
 /*Style for menu links*/
 li a {
@@ -98,7 +121,8 @@ ul li a:hover {
     text-align: center;
     padding: 10px 0;
     display: none;
-    margin-top: -25px;
+    top: 6px;
+    position: relative;
 }
 /*Hide checkbox*/
 input[type=checkbox]{
@@ -109,22 +133,25 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 /*Responsive Styles*/
-@media screen and (max-width : 767px){
+@media screen and (max-width : 768px){
     /*Make dropdown links appear inline*/
     ul {
-        position: absolute;
+        position: relative;
         display: none;
         margin-top: -8px;
+        z-index: 1;
     }
     
     /*Make all menu links full width*/
     ul li, li a {
         width: 100%;
+    
     }
     /*Display 'show menu' link*/
     .show-menu {
         display:block;
     }
+    
 }
 
 /*Cover image styling*/
@@ -133,8 +160,8 @@ input[type=checkbox]:checked ~ #menu{
     height: 100%;
     display: block;
     z-index: -1;
-    position: absolute;
-    margin-top: 185px;
+    position: relative;
+    top: -10px;
     overflow: auto;
     margin-bottom: 0;
 }
@@ -178,7 +205,7 @@ footer {
 .inline .fa-facebook-square:hover {
     margin-top: -10px;
     text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
-    transform: translate(0, -8);
+    transform: translate(0, -8px);
 }
 
 .inline .fa-twitter-square {
@@ -191,7 +218,7 @@ footer {
 .inline .fa-twitter-square:hover {
     margin-top: -10px;
     text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
-    transform: translate(0, -8);
+    transform: translate(0, -8px);
 }
 
 .inline .fa-youtube-square {
@@ -204,7 +231,7 @@ footer {
 .inline .fa-youtube-square:hover {
     margin-top: -10px;
     text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
-    transform: translate(0, -5);
+    transform: translate(0, -5px);
 }
 
 /*-----------------About us.html page----------------------*/
@@ -231,6 +258,8 @@ h2 {
     height: 194px;
     border:3px solid #fff;
     margin-right: 10px;
+    float: left;
+    
 }
 
 .names {
@@ -268,6 +297,201 @@ audio {
    
 }
 
+/*-----------------Photos.html page----------------------*/
+
+#gallery {
+    border: 1px solid #19c589;
+    min-width: 100%;
+    padding: 50px 0px 0px 0px;
+    min-height: 100%;
+    background-color: #7f7f7f;
+    position: relative;
+    text-align: center;
+    margin-bottom: 51px;
+}
+
+.col-md-3 img{
+    margin: 50px 0px 20px 5px;
+    cursor: pointer !important;
+    padding: 1px;
+}
+
+.lightbox {
+    visibility: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: rgba(72,73,74,0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.lightbox:target {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s;
+    
+}
+
+.outer {
+    background-color: #fff;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin-top: 6%;
+    box-shadow: 0px 0px 10px 10px blue;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.outer .inner {
+    width: 100%;
+    height: 90%;
+}
+
+.inner img {
+       width: 85%;
+       height: 75%;
+       border-radius: 6px;
+}
 
 
+.lightbox a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Anton" , sans-serif;
+}
 
+#cross {
+    float: right;
+    color: #666666;
+}
+
+#next {
+    float: right;
+    margin-top: -45px;
+    color: #000000;
+    
+}
+
+#previous {
+    float: left;
+    margin-top: -45px;
+    color: #000000;
+}
+
+#title {
+    font-family: "Anton" , sans-serif;
+    font-size: 10px;
+    padding-top: 30px;
+    text-align: left;
+    color: #666666;
+    word-wrap: break-word;
+}
+
+/*=======================OurMusic========================*/
+
+#bg {
+    background-color: pink;
+}
+
+#popular-songs-header {
+    color: red;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    padding-top: 51px;
+}
+
+#song-title {
+    width: 100%;
+    text-align: center;
+    font-family: "Gothic A1", sans-serif;
+    margin-bottom: 0px;
+}
+
+.video {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    background-color: red;
+    margin-top: 5px;
+}
+
+#lyrics-title {
+    text-align: center;
+    font-family: "Exo", sans-serif;
+    background-color: grey;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#lyrics {
+    width: 100%;
+    text-align: center;
+    font-family: "Gothic A1", sans-serif;
+    margin-bottom: 51px;
+}
+
+#song{
+    width: 100%;
+    margin: 0px 30px;
+}
+
+/*=======================Contact========================*/
+
+#contact {
+    width: 100%;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    color: white;
+    padding: 80px 0px 0px 0px;
+}
+
+#form {
+    width: 100%;
+    text-align: center;
+    font-family: "Exo", sans-serif;
+    margin-top: 40px;
+    color: white;
+}
+
+#form-background {
+    background-color: black;
+}
+
+input {
+    border-radius: 5px;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 60%;
+    text-indent: 20px;
+    font-size: smaller;
+    border-radius: 5px;
+}
+
+#email {
+    margin-bottom: 100%;
+    margin-top: 25px;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
+.form-text {
+    width: 100%;
+    margin: 0px 60px;
+    padding-top: 40px;
+}
+
+.form-div {
+    width: 100%;
+    height: 100%;
+}
