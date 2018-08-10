@@ -1,18 +1,23 @@
+### Milestone Project - Website for a band - The Monkees
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+#### Overview
 
+A music band's website which was formed first in the '60's and are active even today.
 
-Hi there! Welcome to Cloud9 IDE!
+Features of the website includes:
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+Home Page - a simple background image of a 1963 music album cover photo.
 
-Happy coding!
-The Cloud9 IDE team# Milestone-project
+About us - includes photos of members with a short presentation of who they are. Name tags are linked to thier individual official websites.
+
+Photos - include a photo gallery with a lightbox effect entirely made with HTML and CSS (No Javascript involved) which is also mobile responsive.
+
+Our Music - invites visitors to listen their popular songs, includes lyrics as well.
+
+Contact Us - A contact form where visitors can place their enquiries about thier availability, location and other questions, if they wish to book the band for their event.
+
+Across all pages we can find the navigation bar which is mobile responsive using hover effects and a footer with icons linked to their Facebook, Twitter official pages and their official Youtube channel.
+
+## Technology used
+
+Html, Css and Bootstrap have been used to create this website.
