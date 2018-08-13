@@ -1,12 +1,10 @@
-### Milestone Project - Website for a band - The Monkees
+# Milestone Project - Website for a band - The Monkees
 
-#### Overview
+A music band's website which was formed first in the '60's and are active even today having concerts in different cities across West Europe.
 
-A music band's website which was formed first in the '60's and are active even today.
+## Features of the website includes:
 
-Features of the website includes:
-
-Home Page - a simple background image of a 1963 music album cover photo.
+Home Page - a simple background image of a 1963 music album cover photo followed by a touring section showing the cities linked to Google maps and dates where they will have concerts.
 
 About us - includes photos of members with a short presentation of who they are. Name tags are linked to thier individual official websites.
 
@@ -21,3 +19,30 @@ Across all pages we can find the navigation bar which is mobile responsive using
 ## Technology used
 
 Html, Css and Bootstrap have been used to create this website.
+
+## Testing
+
+All HTML and CSS code has been tested with W3C Validator and all erros have been fixed.
+
+* https://validator.w3.org/ - HTML
+* https://jigsaw.w3.org/css-validator/ - CSS
+
+The pages been tested on different screen sizes using  Chrome DevTools.
+
+## Credits
+
+### Content
+
+The texts from About us section  have been copied from:
+
+* Davey Jones - https://en.wikipedia.org/wiki/Davy_Jones_(musician).
+
+* Micky Dolenz - https://en.wikipedia.org/wiki/Micky_Dolenz.
+
+* Michael Nesmith - https://en.wikipedia.org/wiki/Michael_Nesmith.
+
+* Peter Tork - https://en.wikipedia.org/wiki/Peter_Tork.
+
+### Media
+
+The photos, audios and the video used have been obtain from: https://github.com/Code-Institute-Org/project-assets
