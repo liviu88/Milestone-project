@@ -11,7 +11,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 header {
@@ -284,8 +284,9 @@ footer {
     background-color: #b7cff4;
     padding-bottom: 40px;
 }
+
 h2 {
-    padding-top: 250px;
+    padding-top: 50px;
     width: 100%;
     font-family: "Gothic A1", sans-serif;
     text-align: center;
@@ -471,6 +472,7 @@ audio {
     width: 500px;
     background-color: red;
     margin-top: 5px;
+    margin-bottom: 2px;
 }
 
 .lyrics-title {
@@ -500,7 +502,7 @@ audio {
     text-align: center;
     font-family: "Anton", sans-serif;
     color: white;
-    padding: 80px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
 }
 
 .form {
